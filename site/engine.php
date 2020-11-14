@@ -24,8 +24,12 @@ if ($_GET['a'] && $_GET['b']){
 
 $a = $_GET['a'];
 $b = $_GET['b'];
-$c = $a+$b;
-print ("$a+$b=$c");
+if (is_numberic($a) and is_numberic($b)) {
+        $c = $a + $b;
+        print("$a+$b=$c");
+} else {
+        print("Wrong");
+}
 
 
 

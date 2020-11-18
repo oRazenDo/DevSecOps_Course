@@ -1,2 +1,2 @@
 FROM spaceonfire/nginx-php-fpm
-COPY .:/var/www/html/
+COPY . /var/www/html/
